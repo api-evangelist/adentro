@@ -1,0 +1,42 @@
+generated: '2026-07-17'
+method: searched
+source: https://support.adentro.com/s/article/V2-V3-Location-Scanning-Migration
+docs: https://support.adentro.com/s/
+note: >-
+  Adentro (formerly Zenreach) does not publish a public OpenAPI spec or self-serve
+  developer portal. API access is partner/customer-gated. These auth details are
+  captured verbatim from Adentro support articles and from published partner
+  integration guides (Fishbowl GRM, Alpine IQ) that document connecting to the
+  Adentro Contacts API and Location & Scanning API.
+summary:
+  types:
+  - http
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+- name: adentroToken
+  type: http
+  scheme: bearer
+  in: header
+  parameter: Authorization
+  description: >-
+    Customers are issued an Adentro API Token that must be passed via the
+    Authorization header on all API requests. Tokens are issued manually by
+    Adentro and their expiration/rotation policy is managed by Adentro (contact
+    the Adentro account/engineering team to obtain one). Applies to the Contacts
+    API and the Location & Scanning API (V2 and V3).
+  sources:
+  - https://docs.fishbowl.com/knowledge/adentro-wifi
+  - https://support.adentro.com/s/article/V2-V3-Location-Scanning-Migration
+apis:
+- name: Contacts API
+  auth: adentroToken
+  identifiers:
+    location_id: >-
+      Per-location scoping via Adentro Location IDs (the `business={id}` value in
+      the Adentro dashboard URL). Requests are scoped to the customer's locations.
+- name: Location & Scanning API
+  auth: adentroToken
+  versions:
+  - v2
+  - v3
