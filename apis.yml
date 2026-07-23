@@ -1,8 +1,18 @@
 aid: adentro
 name: Adentro
-description: 'Adentro is a company surfaced as a portfolio company of bain-capital-ventures, uncork-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-apps. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  Adentro (formerly Zenreach) is a WiFi marketing and customer-intelligence
+  platform that connects online marketing spend to real-world, in-store visits
+  for brick-and-mortar businesses. Branded guest-WiFi portals capture and enrich
+  first-party customer profiles, measure foot traffic and a "Walk-Through Rate"
+  attribution metric, and power automated email and audience-targeting campaigns
+  across roughly 100 million verified US consumer profiles. Adentro serves
+  retail, food and beverage, venues and arenas, and entertainment and hospitality
+  brands. It exposes a partner/customer-gated Contacts API and a Location &
+  Scanning API (V2/V3) for syncing captured contacts, visits, and location data
+  into CRMs and loyalty platforms such as Fishbowl and Alpine IQ; access is
+  granted via an Adentro-issued token passed in the Authorization header rather
+  than through a public self-serve developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/adentro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +21,58 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://adentro.com/wp-content/uploads/2024/06/adentro-logo.png
 tags:
 - Company
 - Ai Apps
+- WiFi Marketing
+- Customer Intelligence
+- Location Analytics
+- Retail
+- Marketing Attribution
+- Guest WiFi
 apis: []
+common:
+- type: DomainSecurity
+  url: security/adentro-domain-security.yml
+- type: Website
+  url: https://adentro.com/
+- type: Support
+  url: https://support.adentro.com/s/
+- type: Documentation
+  url: https://support.adentro.com/s/
+- type: Pricing
+  url: https://adentro.com/pricing/
+- type: Login
+  url: https://my.zenreach.com/
+- type: PrivacyPolicy
+  url: https://adentro.com/privacy/
+- type: TermsOfService
+  url: https://adentro.com/terms/
+- type: Authentication
+  url: authentication/adentro-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
