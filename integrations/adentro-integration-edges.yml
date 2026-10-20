@@ -2,6 +2,7 @@ generated: '2026-10-14'
 method: searched
 checked:
 - toast/integrations/toast-integration-edges.yml
+- https://aws.amazon.com/marketplace/search/results?FULFILLMENT_OPTION_TYPE=DATA_EXCHANGE
 source:
 - toast/integrations/toast-integration-edges.yml
 edges:
@@ -22,3 +23,32 @@ edges:
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
   category: Analytics
+- partner_name: AWS Data Exchange
+  partner: amazon-data-exchange
+  partner_match: aggregator
+  type: marketplace
+  marketplace: amazon-data-exchange-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=2565071d-5dd7-417a-827a-53305a38482b
+  category: data product listing
+  contract_reference:
+    register: AWS Data Exchange (AWS Marketplace discovery search, FULFILLMENT_OPTION_TYPE=DATA_EXCHANGE + seller-profile
+      sellerWebsiteUrl)
+    spec_file: null
+    role: data-marketplace-seller
+    registered_name: Adentro
+    matched_domain: adentro.com
+    matched_by: domain
+    listings: 1
+    sample_listings:
+    - Adentro National Foot-Traffic Index
+    signal_note: 'participation: the provider lists data products on this marketplace; counts are context'
+    detected_by: sweep-data-marketplaces.py
+    detected: '2026-10-20'
+  detected_by: sweep-data-marketplaces.py
+  detected: '2026-10-20'
+  publisher_verified:
+  - Deployed on AWS
+  - Standard Data Agreement
