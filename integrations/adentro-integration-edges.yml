@@ -3,26 +3,10 @@ method: searched
 checked:
 - toast/integrations/toast-integration-edges.yml
 - https://aws.amazon.com/marketplace/search/results?FULFILLMENT_OPTION_TYPE=DATA_EXCHANGE
+- cisco/integrations/cisco-integration-edges.yml
 source:
 - toast/integrations/toast-integration-edges.yml
 edges:
-- partner_name: Toast (own)
-  partner: toast
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://pos.toasttab.com/partners/directory/adentro
-  mirror_of: toast/integrations/toast-integration-edges.yml
-  apps:
-  - Adentro
-  listing_count: 1
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
-  category: Analytics
 - partner_name: AWS Data Exchange
   partner: amazon-data-exchange
   partner_match: aggregator
@@ -52,3 +36,38 @@ edges:
   publisher_verified:
   - Deployed on AWS
   - Standard Data Agreement
+- partner_name: Toast (own)
+  partner: toast
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://pos.toasttab.com/partners/directory/adentro
+  mirror_of: toast/integrations/toast-integration-edges.yml
+  apps:
+  - Adentro
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Analytics
+- partner_name: Cisco (own)
+  partner: cisco
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.cisco.com/en-US/apps/380790
+  mirror_of: cisco/integrations/cisco-integration-edges.yml
+  apps:
+  - Adentro Engage
+  - Adentro Attract
+  listing_count: 2
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: Omnichannel Marketing, Proximity Marketing
