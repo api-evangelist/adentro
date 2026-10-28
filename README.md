@@ -64,6 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Adentro is a company surfaced as a portfolio company of bain-capital-ventures, uncork-capital and added to the API Evangelist network as a stub for enrichment. Sector: ai-apps. This profile is a lead awaiting the enrichment pipeline.
+Adentro (formerly Zenreach) is a WiFi marketing and customer-intelligence platform that connects online marketing spend to real-world, in-store visits for brick-and-mortar businesses. Branded guest-WiFi portals capture and enrich first-party customer profiles, measure foot traffic and a "Walk-Through Rate" attribution metric, and power automated email and audience-targeting campaigns across roughly 100 million verified US consumer profiles. Adentro serves retail, food and beverage, venues and arenas, and entertainment and hospitality brands. It exposes a partner/customer-gated Contacts API and a Location & Scanning API (V2/V3) for syncing captured contacts, visits, and location data into CRMs and loyalty platforms such as Fishbowl and Alpine IQ; access is granted via an Adentro-issued token passed in the Authorization header rather than through a public self-serve developer portal.
 
-Backed by: bain-capital-ventures, uncork-capital
+**Areas:** Company · Ai Apps · WiFi Marketing · Customer Intelligence · Location Analytics · Retail · Marketing Attribution · Guest WiFi
+
+## Adentro on APIs.io
+
+Everything profiled for Adentro is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/adentro/](https://apis.io/providers/adentro/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Adentro Authentication](https://apis.io/security/adentro/adentro-authentication/)
+- [Adentro Domain Security](https://apis.io/security/adentro/adentro-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://adentro.com/)
+- [Documentation](https://support.adentro.com/s/)
+- [Pricing](https://adentro.com/pricing/)
+- [Support](https://support.adentro.com/s/)
+- [Terms of service](https://adentro.com/terms/)
+- [Privacy policy](https://adentro.com/privacy/)
+
+## API Evangelist rating
+
+**Kin Score 12.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 17.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/adentro/](https://apis.io/providers/adentro/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Adentro: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/adentro/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
